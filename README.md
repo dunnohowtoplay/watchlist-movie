@@ -26,11 +26,7 @@ docker-compose build
 docker-compose up
 ```
 
-9. After app successfully run, execute alembic migration
-```
-alembic upgrade head
-```
-11. API Documentation can see in here after successfully run the app
+9. API Documentation can see in here after successfully run the app
 ```
 http://0.0.0.0:8000/watchlist/docs#/
 ```
