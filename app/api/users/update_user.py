@@ -7,7 +7,7 @@ from app.schema.users import UserUpdate
 from app.utils.json_response import JsonResponse
 
 
-def updated_user(request:Request, user_id: int, user_data: UserUpdate):
+def update_user(request:Request, user_id: int, user_data: UserUpdate):
     redis = request.app.redis
     redis_key_user_list = f"user-list"
     redis_key_user_detail = f"user-detail:{user_id}"

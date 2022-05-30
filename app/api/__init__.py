@@ -7,7 +7,7 @@ from app.api.movies.get_movies_list import get_movies_list
 #USERS
 from app.api.users.create_user import create_user
 from app.api.users.delete_user import delete_user
-from app.api.users.update_user import updated_user
+from app.api.users.update_user import update_user
 from app.api.users.list_user import list_users
 from app.api.users.user_detail import detail_user
 
@@ -32,7 +32,7 @@ router.add_api_route('/movies/list', endpoint=get_movies_list, methods=['GET'], 
 
 # Users
 router.add_api_route('/user/create', endpoint=create_user, methods=['POST'], tags=['Users'])
-router.add_api_route('/user/update/{user_id}', endpoint=updated_user, methods=['PUT'], tags=['Users'])
+router.add_api_route('/user/update/{user_id}', endpoint=update_user, methods=['PUT'], tags=['Users'])
 router.add_api_route('/user/delete/{user_id}', endpoint=delete_user, methods=['DELETE'], tags=['Users'])
 router.add_api_route('/user/list', endpoint=list_users, methods=['GET'], tags=['Users'])
 router.add_api_route('/user/{user_id}', endpoint=detail_user, methods=['GET'], tags=['Users'])
