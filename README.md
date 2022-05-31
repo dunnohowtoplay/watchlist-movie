@@ -4,7 +4,7 @@ HOW TO RUN:
 1. Clone this repository
 2. create environment
 ```
-python3.9 venv env
+python3.9 -m venv env
 ```
 
 3. Activate env, on mac use this command
